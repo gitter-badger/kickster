@@ -9,6 +9,8 @@ exclude:
   - bower.json
   - bin/*
 
+highlighter: rouge
+
 assets:
   dirname: assets
   baseurl: /kickster/assets/

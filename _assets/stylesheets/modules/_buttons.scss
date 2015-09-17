@@ -16,6 +16,7 @@
 
   &:hover {
     color: $font;
+    background: rgba($font, .1);
     border-color: darken($font, 5);
   }
 

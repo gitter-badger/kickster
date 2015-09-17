@@ -4,16 +4,19 @@
 
 header {
   display: block;
-  height: 500px;
-  padding: 0 15px;
+  padding: 125px 15px;
   text-align: center;
   background: $brand-info;
+
+  h4 {
+    display: inline-block;
+    max-width: 600px;
+  }
 }
 
 .header-logo {
   display: inline-block;
   width: 300px;
-  margin-top: 40px;
   margin-bottom: 25px;
 }
 
@@ -32,6 +35,18 @@ header {
   }
 
   h6 { margin-bottom: 15px; }
+}
+
+.header-actions {
+  display: block;
+  margin-top: 35px;
+  text-align: center;
+
+  .button {
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: middle;
+  }
 }
 
 @include breakpoint(extra-small) {

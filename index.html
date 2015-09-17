@@ -1,82 +1,47 @@
 ---
 layout: default
-title: "Kickster | Hassle-free deploying to GitHub Pages with Jekyll"
+title: "Kickster | Kickstart your website with out-of-the-box templates and hassle-free GitHub Pages deployment"
 description: "Jekyll starter template with GitHub Pages deploy to kickstart your project."
 ---
 
 <header>
-  <nav>
-    <ul class="navigation">
-      <li>
-        <a href="https://github.com/nielsenramon/kickster/blob/master/README.md" target="_blank" title="Documentation">Documentation</a>
-      </li>
-      <li>
-        <a href="https://github.com/nielsenramon/kickster" class="button button-default" target="_blank"title="View on GitHub">View on GitHub</a>
-      </li>
-    </ul>
-  </nav>
-
   <a href="{{ site.baseurl }}" title="Kickster" class="header-logo">
     {% image logo-white.png %}
   </a>
-  <h4>Hassle-free deploying to GitHub Pages with Jekyll</h4>
+  <br>
+  <h4>
+    Kickstart your website with out-of-the-box templates
+    and hassle-free GitHub Pages deployment
+  </h4>
+  <div class="header-actions">
+    <a href="https://github.com/nielsenramon/kickster/blob/master/README.md" class="button button-default" target="_blank" title="Documentation">Docs</a>
+    <a href="https://github.com/nielsenramon/kickster" class="button button-default" target="_blank" title="View on GitHub">GitHub</a>
+  </div>
 </header>
-
-<div class="header-sub">
-  <h6>One command, nothing more</h6>
-  <code>
-    bin/deploy "My deploy message"
-  </code>
-</div>
 
 <main role="main">
   <div class="grid grid-centered">
     <div class="grid-cell">
-      <section class="is-left">
-        <h5>Hassle-free deploying</h5>
-        <p>
-          Deploy from any GitHub branch to Github Pages with one simple command. JavaScript and CSS assets are minified and uglified using <a href="http://jekyll-assets.github.io/jekyll-assets/" target="_blank" title="Jekyll Assets">Jekyll Assets</a>. Next to that CSS is <a href="https://github.com/postcss/autoprefixer" target="_blank" title="Autoprefixer">autoprefixed</a> for vendor browser support.
-        </p>
-      </section>
-      <section class="is-right with-icon">
-        <span class="icon icon-ios-cloud-upload-outline"></span>
-      </section>
-    </div>
 
-    <div class="grid-cell">
-      <section class="is-left with-icon">
-        <span class="icon icon-social-github-outline"></span>
-      </section>
-      <section class="is-right">
-        <h5>GitHub Pages hosting</h5>
-        <p>
-          Host your website for free from any of your GitHub repositories. Changes made to your <a href="https://pages.github.com/" target="_blank" title="GitHub Pages">GitHub Pages</a> branch are live instantly. Perfect for blogging, project websites or documentation pages.
-        </p>
-      </section>
-    </div>
-
-    <div class="grid-cell">
       <section class="is-left">
-        <h5>Easy Setup</h5>
+        <h5>Easy installation</h5>
         <p>
+          Install the Gem first:
+          <code>
+            gem install kickster
+          </code>
+
           Made for your quick prototyping needs. Kickster has an easy and unobtrusive <a href="https://github.com/nielsenramon/kickster/blob/master/README.md" target="_blank" title="Setup instructions for Kickster">setup</a> which gets you started in no time. Kickster uses <a href="http://jekyllrb.com/" target="_blank" title="Jekyll website">Jekyll</a> so ships with endless configuration possibilities.
         </p>
       </section>
-      <section class="is-right with-icon">
-        <span class="icon icon-ios-timer-outline"></span>
-      </section>
-    </div>
-
-    <div class="grid-cell">
-      <section class="is-left with-icon">
-        <span class="icon icon-ios-cog-outline"></span>
-      </section>
 
       <section class="is-right">
-        <h5>Jekyll plugin support</h5>
-        <p>
-          Perfect for Jekyll users that require Jekyll plugins (as GitHub Pages does not support all <a href="https://help.github.com/articles/using-jekyll-plugins-with-github-pages/" target="_blank" title="GitHub Pages pluging support">plugins</a>). With Kickster you can push the output from Jekyll with any plugin (static files) to your GitHub Pages branch with one command.
-        </p>
+        {% highlight shell %}
+~ $ gem install kickster
+~ $ kickster new site_name
+~ $ cd site_name
+~ $ bin/setup
+        {% endhighlight %}
       </section>
 
     </div>
