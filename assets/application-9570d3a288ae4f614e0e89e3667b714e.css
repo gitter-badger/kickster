@@ -1,0 +1,2974 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
+
+body {
+  margin: 0 auto;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #555; }
+
+p {
+  margin: 0;
+  font-family: "Roboto", Courier, Arial, sans-serif;
+  font-weight: 300;
+  color: #696c6f; }
+
+b,
+strong {
+  font-weight: 700; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 32px; }
+
+h3 {
+  font-size: 28px; }
+
+h4 {
+  font-family: "Roboto", Courier, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7); }
+
+h5 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 17.6px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+h6 {
+  font-size: 16px; }
+
+a {
+  font-family: "Roboto", Courier, Arial, sans-serif;
+  color: #ff9e11;
+  text-decoration: none;
+  -webkit-transition: color 0.1s linear;
+          transition: color 0.1s linear; }
+  a:hover, a:active {
+    color: #c47400; }
+  a:focus {
+    color: #c47400;
+    outline: none; }
+
+hr {
+  margin: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #a5aaaf;
+  border-left: 0; }
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0; }
+
+code {
+  font-family: "Inconsolata", Courier, serif; }
+
+abbr,
+acronym {
+  cursor: help;
+  border-bottom: 1px dotted #a5aaaf; }
+
+blockquote {
+  padding-left: 0.75;
+  margin: 1.5 0;
+  color: #7b7b7b;
+  border-left: 2px solid #a5aaaf; }
+
+cite {
+  font-style: italic;
+  color: #ff9e11; }
+
+::-moz-selection {
+  color: #fff;
+  background: #ff9e11; }
+
+::selection {
+  color: #fff;
+  background: #ff9e11; }
+
+footer {
+  padding: 50px 0;
+  border-top: 1px solid #f3f3f3; }
+  footer p,
+  footer a {
+    color: #a5aaaf; }
+
+.grid {
+  display: block;
+  padding: 0;
+  margin: 0 -20px;
+  font-size: 0;
+  text-align: left; }
+
+main {
+  padding: 50px 0; }
+
+.grid-cell {
+  display: inline-block;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0;
+  font-size: 16px;
+  text-align: left;
+  vertical-align: top; }
+  .grid-cell.with-1col {
+    width: 8.33333%; }
+  .grid-cell.with-2col {
+    width: 16.66667%; }
+  .grid-cell.with-3col {
+    width: 25%; }
+  .grid-cell.with-4col {
+    width: 33.33333%; }
+  .grid-cell.with-5col {
+    width: 41.66667%; }
+  .grid-cell.with-6col {
+    width: 50%; }
+  .grid-cell.with-7col {
+    width: 58.33333%; }
+  .grid-cell.with-8col {
+    width: 66.66667%; }
+  .grid-cell.with-9col {
+    width: 75%; }
+  .grid-cell.with-10col {
+    width: 83.33333%; }
+  .grid-cell.with-11col {
+    width: 91.66667%; }
+  .grid-cell.is-centered {
+    text-align: center; }
+
+.grid-centered {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto; }
+
+nav {
+  display: block;
+  padding: 50px;
+  text-align: right; }
+
+.navigation {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .navigation li {
+    display: inline-block;
+    padding-left: 25px;
+    vertical-align: middle; }
+    .navigation li a {
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.7);
+      border-color: rgba(255, 255, 255, 0.7); }
+      .navigation li a:hover {
+        color: #fff; }
+      .navigation li a.button-primary {
+        color: #ff9e11; }
+        .navigation li a.button-primary:hover {
+          color: #ff9e11; }
+
+@media all and (max-width: 767px) {
+  nav {
+    text-align: center; } }
+@media all and (max-width: 400px) {
+  nav {
+    padding: 25px 0 50px; }
+
+  .navigation li .button-primary {
+    margin-top: 15px; } }
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: inherit;
+  letter-spacing: .1em;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #303233;
+  border-radius: 2px;
+  -webkit-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
+  appearance: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .button:disabled, .button.is-disabled {
+    color: #555;
+    cursor: not-allowed;
+    background: transparent; }
+    .button:disabled:hover, .button:disabled:focus
+    .button:disabled:active, .button.is-disabled:hover, .button.is-disabled:focus
+    .button:disabled:active, .button:disabled:focus
+    .button.is-disabled:active, .button.is-disabled:focus
+    .button.is-disabled:active {
+      color: #555;
+      background: transparent; }
+
+.button-default {
+  background: transparent;
+  border-color: #fff;
+  color: #fff; }
+  .button-default:hover {
+    color: #fff;
+    border-color: #f2f2f2; }
+  .button-default:active {
+    border-color: #e6e6e6; }
+  .button-default:focus {
+    outline: none; }
+
+.button-success {
+  background: #2a7870;
+  border-color: #fff;
+  color: #fff; }
+  .button-success:hover {
+    color: #fff;
+    border-color: #f2f2f2; }
+  .button-success:active {
+    border-color: #e6e6e6; }
+  .button-success:focus {
+    outline: none; }
+
+.button-danger {
+  background: #d94343;
+  border-color: #fff;
+  color: #fff; }
+  .button-danger:hover {
+    color: #fff;
+    border-color: #f2f2f2; }
+  .button-danger:active {
+    border-color: #e6e6e6; }
+  .button-danger:focus {
+    outline: none; }
+
+.button-info {
+  background: #0477bf;
+  border-color: #fff;
+  color: #fff; }
+  .button-info:hover {
+    color: #fff;
+    border-color: #f2f2f2; }
+  .button-info:active {
+    border-color: #e6e6e6; }
+  .button-info:focus {
+    outline: none; }
+
+.button-primary {
+  background: transparent;
+  border-color: #ff9e11;
+  color: #ff9e11; }
+  .button-primary:hover {
+    color: #ff9e11;
+    border-color: #f79200; }
+  .button-primary:active {
+    border-color: #dd8300; }
+  .button-primary:focus {
+    outline: none; }
+
+form {
+  position: relative;
+  clear: both; }
+
+fieldset {
+  padding: 20px;
+  margin: 0;
+  background: #f3f3f3;
+  border: 1px solid #a5aaaf; }
+
+label,
+input,
+select,
+textarea {
+  display: inline-block;
+  font-family: inherit;
+  line-height: 1.5; }
+
+label {
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #555; }
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 15px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #a5aaaf;
+  border-radius: 2px;
+  -webkit-transition: border-color 0.1s linear;
+          transition: border-color 0.1s linear;
+  appearance: none; }
+  input:hover,
+  textarea:hover {
+    border-color: #8a9197; }
+  input:focus, input:active,
+  textarea:focus,
+  textarea:active {
+    border-color: #ff9e11;
+    outline: none; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer; }
+
+.form-item {
+  position: relative;
+  display: block;
+  margin-bottom: 10px; }
+
+header {
+  display: block;
+  height: 500px;
+  padding: 0 15px;
+  text-align: center;
+  background: #0477bf; }
+
+.header-logo {
+  display: inline-block;
+  width: 300px;
+  margin-top: 40px;
+  margin-bottom: 25px; }
+
+.header-sub {
+  display: block;
+  padding: 50px 0;
+  text-align: center;
+  background: #f3f3f3; }
+  .header-sub code {
+    display: inline-block;
+    padding: 20px;
+    color: #fff;
+    background: #404040;
+    border-radius: 2px; }
+  .header-sub h6 {
+    margin-bottom: 15px; }
+
+@media all and (max-width: 400px) {
+  header {
+    height: 450px; }
+
+  .header-logo {
+    width: 250px;
+    margin-top: 20px; } }
+@font-face {
+  font-family: "ionicons";
+  src: url("/assets/ionicons-e8779fb45ff2da58ae4f85264b310231.eot?#iefix") format("embedded-opentype"), url("/assets/ionicons-2f9f932a56c0cd836f67f4440ec79c69.woff") format("woff"), url("/assets/ionicons-ae977947c685145c666ef086be57f214.ttf") format("truetype"); }
+.icon {
+  display: inline-block;
+  width: 1.1em;
+  font-family: ionicons;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center; }
+
+.icon-alert:before {
+  content: ""; }
+
+.icon-alert-circled:before {
+  content: ""; }
+
+.icon-android-add:before {
+  content: ""; }
+
+.icon-android-add-circle:before {
+  content: ""; }
+
+.icon-android-alarm-clock:before {
+  content: ""; }
+
+.icon-android-alert:before {
+  content: ""; }
+
+.icon-android-apps:before {
+  content: ""; }
+
+.icon-android-archive:before {
+  content: ""; }
+
+.icon-android-arrow-back:before {
+  content: ""; }
+
+.icon-android-arrow-down:before {
+  content: ""; }
+
+.icon-android-arrow-dropdown:before {
+  content: ""; }
+
+.icon-android-arrow-dropdown-circle:before {
+  content: ""; }
+
+.icon-android-arrow-dropleft:before {
+  content: ""; }
+
+.icon-android-arrow-dropleft-circle:before {
+  content: ""; }
+
+.icon-android-arrow-dropright:before {
+  content: ""; }
+
+.icon-android-arrow-dropright-circle:before {
+  content: ""; }
+
+.icon-android-arrow-dropup:before {
+  content: ""; }
+
+.icon-android-arrow-dropup-circle:before {
+  content: ""; }
+
+.icon-android-arrow-forward:before {
+  content: ""; }
+
+.icon-android-arrow-up:before {
+  content: ""; }
+
+.icon-android-attach:before {
+  content: ""; }
+
+.icon-android-bar:before {
+  content: ""; }
+
+.icon-android-bicycle:before {
+  content: ""; }
+
+.icon-android-boat:before {
+  content: ""; }
+
+.icon-android-bookmark:before {
+  content: ""; }
+
+.icon-android-bulb:before {
+  content: ""; }
+
+.icon-android-bus:before {
+  content: ""; }
+
+.icon-android-calendar:before {
+  content: ""; }
+
+.icon-android-call:before {
+  content: ""; }
+
+.icon-android-camera:before {
+  content: ""; }
+
+.icon-android-cancel:before {
+  content: ""; }
+
+.icon-android-car:before {
+  content: ""; }
+
+.icon-android-cart:before {
+  content: ""; }
+
+.icon-android-chat:before {
+  content: ""; }
+
+.icon-android-checkbox:before {
+  content: ""; }
+
+.icon-android-checkbox-blank:before {
+  content: ""; }
+
+.icon-android-checkbox-outline:before {
+  content: ""; }
+
+.icon-android-checkbox-outline-blank:before {
+  content: ""; }
+
+.icon-android-checkmark-circle:before {
+  content: ""; }
+
+.icon-android-clipboard:before {
+  content: ""; }
+
+.icon-android-close:before {
+  content: ""; }
+
+.icon-android-cloud:before {
+  content: ""; }
+
+.icon-android-cloud-circle:before {
+  content: ""; }
+
+.icon-android-cloud-done:before {
+  content: ""; }
+
+.icon-android-cloud-outline:before {
+  content: ""; }
+
+.icon-android-color-palette:before {
+  content: ""; }
+
+.icon-android-compass:before {
+  content: ""; }
+
+.icon-android-contact:before {
+  content: ""; }
+
+.icon-android-contacts:before {
+  content: ""; }
+
+.icon-android-contract:before {
+  content: ""; }
+
+.icon-android-create:before {
+  content: ""; }
+
+.icon-android-delete:before {
+  content: ""; }
+
+.icon-android-desktop:before {
+  content: ""; }
+
+.icon-android-document:before {
+  content: ""; }
+
+.icon-android-done:before {
+  content: ""; }
+
+.icon-android-done-all:before {
+  content: ""; }
+
+.icon-android-download:before {
+  content: ""; }
+
+.icon-android-drafts:before {
+  content: ""; }
+
+.icon-android-exit:before {
+  content: ""; }
+
+.icon-android-expand:before {
+  content: ""; }
+
+.icon-android-favorite:before {
+  content: ""; }
+
+.icon-android-favorite-outline:before {
+  content: ""; }
+
+.icon-android-film:before {
+  content: ""; }
+
+.icon-android-folder:before {
+  content: ""; }
+
+.icon-android-folder-open:before {
+  content: ""; }
+
+.icon-android-funnel:before {
+  content: ""; }
+
+.icon-android-globe:before {
+  content: ""; }
+
+.icon-android-hand:before {
+  content: ""; }
+
+.icon-android-hangout:before {
+  content: ""; }
+
+.icon-android-happy:before {
+  content: ""; }
+
+.icon-android-home:before {
+  content: ""; }
+
+.icon-android-image:before {
+  content: ""; }
+
+.icon-android-laptop:before {
+  content: ""; }
+
+.icon-android-list:before {
+  content: ""; }
+
+.icon-android-locate:before {
+  content: ""; }
+
+.icon-android-lock:before {
+  content: ""; }
+
+.icon-android-mail:before {
+  content: ""; }
+
+.icon-android-map:before {
+  content: ""; }
+
+.icon-android-menu:before {
+  content: ""; }
+
+.icon-android-microphone:before {
+  content: ""; }
+
+.icon-android-microphone-off:before {
+  content: ""; }
+
+.icon-android-more-horizontal:before {
+  content: ""; }
+
+.icon-android-more-vertical:before {
+  content: ""; }
+
+.icon-android-navigate:before {
+  content: ""; }
+
+.icon-android-notifications:before {
+  content: ""; }
+
+.icon-android-notifications-none:before {
+  content: ""; }
+
+.icon-android-notifications-off:before {
+  content: ""; }
+
+.icon-android-open:before {
+  content: ""; }
+
+.icon-android-options:before {
+  content: ""; }
+
+.icon-android-people:before {
+  content: ""; }
+
+.icon-android-person:before {
+  content: ""; }
+
+.icon-android-person-add:before {
+  content: ""; }
+
+.icon-android-phone-landscape:before {
+  content: ""; }
+
+.icon-android-phone-portrait:before {
+  content: ""; }
+
+.icon-android-pin:before {
+  content: ""; }
+
+.icon-android-plane:before {
+  content: ""; }
+
+.icon-android-playstore:before {
+  content: ""; }
+
+.icon-android-print:before {
+  content: ""; }
+
+.icon-android-radio-button-off:before {
+  content: ""; }
+
+.icon-android-radio-button-on:before {
+  content: ""; }
+
+.icon-android-refresh:before {
+  content: ""; }
+
+.icon-android-remove:before {
+  content: ""; }
+
+.icon-android-remove-circle:before {
+  content: ""; }
+
+.icon-android-restaurant:before {
+  content: ""; }
+
+.icon-android-sad:before {
+  content: ""; }
+
+.icon-android-search:before {
+  content: ""; }
+
+.icon-android-send:before {
+  content: ""; }
+
+.icon-android-settings:before {
+  content: ""; }
+
+.icon-android-share:before {
+  content: ""; }
+
+.icon-android-share-alt:before {
+  content: ""; }
+
+.icon-android-star:before {
+  content: ""; }
+
+.icon-android-star-half:before {
+  content: ""; }
+
+.icon-android-star-outline:before {
+  content: ""; }
+
+.icon-android-stopwatch:before {
+  content: ""; }
+
+.icon-android-subway:before {
+  content: ""; }
+
+.icon-android-sunny:before {
+  content: ""; }
+
+.icon-android-sync:before {
+  content: ""; }
+
+.icon-android-textsms:before {
+  content: ""; }
+
+.icon-android-time:before {
+  content: ""; }
+
+.icon-android-train:before {
+  content: ""; }
+
+.icon-android-unlock:before {
+  content: ""; }
+
+.icon-android-upload:before {
+  content: ""; }
+
+.icon-android-volume-down:before {
+  content: ""; }
+
+.icon-android-volume-mute:before {
+  content: ""; }
+
+.icon-android-volume-off:before {
+  content: ""; }
+
+.icon-android-volume-up:before {
+  content: ""; }
+
+.icon-android-walk:before {
+  content: ""; }
+
+.icon-android-warning:before {
+  content: ""; }
+
+.icon-android-watch:before {
+  content: ""; }
+
+.icon-android-wifi:before {
+  content: ""; }
+
+.icon-aperture:before {
+  content: ""; }
+
+.icon-archive:before {
+  content: ""; }
+
+.icon-arrow-down-a:before {
+  content: ""; }
+
+.icon-arrow-down-b:before {
+  content: ""; }
+
+.icon-arrow-down-c:before {
+  content: ""; }
+
+.icon-arrow-expand:before {
+  content: ""; }
+
+.icon-arrow-graph-down-left:before {
+  content: ""; }
+
+.icon-arrow-graph-down-right:before {
+  content: ""; }
+
+.icon-arrow-graph-up-left:before {
+  content: ""; }
+
+.icon-arrow-graph-up-right:before {
+  content: ""; }
+
+.icon-arrow-left-a:before {
+  content: ""; }
+
+.icon-arrow-left-b:before {
+  content: ""; }
+
+.icon-arrow-left-c:before {
+  content: ""; }
+
+.icon-arrow-move:before {
+  content: ""; }
+
+.icon-arrow-resize:before {
+  content: ""; }
+
+.icon-arrow-return-left:before {
+  content: ""; }
+
+.icon-arrow-return-right:before {
+  content: ""; }
+
+.icon-arrow-right-a:before {
+  content: ""; }
+
+.icon-arrow-right-b:before {
+  content: ""; }
+
+.icon-arrow-right-c:before {
+  content: ""; }
+
+.icon-arrow-shrink:before {
+  content: ""; }
+
+.icon-arrow-swap:before {
+  content: ""; }
+
+.icon-arrow-up-a:before {
+  content: ""; }
+
+.icon-arrow-up-b:before {
+  content: ""; }
+
+.icon-arrow-up-c:before {
+  content: ""; }
+
+.icon-asterisk:before {
+  content: ""; }
+
+.icon-at:before {
+  content: ""; }
+
+.icon-backspace:before {
+  content: ""; }
+
+.icon-backspace-outline:before {
+  content: ""; }
+
+.icon-bag:before {
+  content: ""; }
+
+.icon-battery-charging:before {
+  content: ""; }
+
+.icon-battery-empty:before {
+  content: ""; }
+
+.icon-battery-full:before {
+  content: ""; }
+
+.icon-battery-half:before {
+  content: ""; }
+
+.icon-battery-low:before {
+  content: ""; }
+
+.icon-beaker:before {
+  content: ""; }
+
+.icon-beer:before {
+  content: ""; }
+
+.icon-bluetooth:before {
+  content: ""; }
+
+.icon-bonfire:before {
+  content: ""; }
+
+.icon-bookmark:before {
+  content: ""; }
+
+.icon-bowtie:before {
+  content: ""; }
+
+.icon-briefcase:before {
+  content: ""; }
+
+.icon-bug:before {
+  content: ""; }
+
+.icon-calculator:before {
+  content: ""; }
+
+.icon-calendar:before {
+  content: ""; }
+
+.icon-camera:before {
+  content: ""; }
+
+.icon-card:before {
+  content: ""; }
+
+.icon-cash:before {
+  content: ""; }
+
+.icon-chatbox:before {
+  content: ""; }
+
+.icon-chatbox-working:before {
+  content: ""; }
+
+.icon-chatboxes:before {
+  content: ""; }
+
+.icon-chatbubble:before {
+  content: ""; }
+
+.icon-chatbubble-working:before {
+  content: ""; }
+
+.icon-chatbubbles:before {
+  content: ""; }
+
+.icon-checkmark:before {
+  content: ""; }
+
+.icon-checkmark-circled:before {
+  content: ""; }
+
+.icon-checkmark-round:before {
+  content: ""; }
+
+.icon-chevron-down:before {
+  content: ""; }
+
+.icon-chevron-left:before {
+  content: ""; }
+
+.icon-chevron-right:before {
+  content: ""; }
+
+.icon-chevron-up:before {
+  content: ""; }
+
+.icon-clipboard:before {
+  content: ""; }
+
+.icon-clock:before {
+  content: ""; }
+
+.icon-close:before {
+  content: ""; }
+
+.icon-close-circled:before {
+  content: ""; }
+
+.icon-close-round:before {
+  content: ""; }
+
+.icon-closed-captioning:before {
+  content: ""; }
+
+.icon-cloud:before {
+  content: ""; }
+
+.icon-code:before {
+  content: ""; }
+
+.icon-code-download:before {
+  content: ""; }
+
+.icon-code-working:before {
+  content: ""; }
+
+.icon-coffee:before {
+  content: ""; }
+
+.icon-compass:before {
+  content: ""; }
+
+.icon-compose:before {
+  content: ""; }
+
+.icon-connection-bars:before {
+  content: ""; }
+
+.icon-contrast:before {
+  content: ""; }
+
+.icon-crop:before {
+  content: ""; }
+
+.icon-cube:before {
+  content: ""; }
+
+.icon-disc:before {
+  content: ""; }
+
+.icon-document:before {
+  content: ""; }
+
+.icon-document-text:before {
+  content: ""; }
+
+.icon-drag:before {
+  content: ""; }
+
+.icon-earth:before {
+  content: ""; }
+
+.icon-easel:before {
+  content: ""; }
+
+.icon-edit:before {
+  content: ""; }
+
+.icon-egg:before {
+  content: ""; }
+
+.icon-eject:before {
+  content: ""; }
+
+.icon-email:before {
+  content: ""; }
+
+.icon-email-unread:before {
+  content: ""; }
+
+.icon-erlenmeyer-flask:before {
+  content: ""; }
+
+.icon-erlenmeyer-flask-bubbles:before {
+  content: ""; }
+
+.icon-eye:before {
+  content: ""; }
+
+.icon-eye-disabled:before {
+  content: ""; }
+
+.icon-female:before {
+  content: ""; }
+
+.icon-filing:before {
+  content: ""; }
+
+.icon-film-marker:before {
+  content: ""; }
+
+.icon-fireball:before {
+  content: ""; }
+
+.icon-flag:before {
+  content: ""; }
+
+.icon-flame:before {
+  content: ""; }
+
+.icon-flash:before {
+  content: ""; }
+
+.icon-flash-off:before {
+  content: ""; }
+
+.icon-folder:before {
+  content: ""; }
+
+.icon-fork:before {
+  content: ""; }
+
+.icon-fork-repo:before {
+  content: ""; }
+
+.icon-forward:before {
+  content: ""; }
+
+.icon-funnel:before {
+  content: ""; }
+
+.icon-gear-a:before {
+  content: ""; }
+
+.icon-gear-b:before {
+  content: ""; }
+
+.icon-grid:before {
+  content: ""; }
+
+.icon-hammer:before {
+  content: ""; }
+
+.icon-happy:before {
+  content: ""; }
+
+.icon-happy-outline:before {
+  content: ""; }
+
+.icon-headphone:before {
+  content: ""; }
+
+.icon-heart:before {
+  content: ""; }
+
+.icon-heart-broken:before {
+  content: ""; }
+
+.icon-help:before {
+  content: ""; }
+
+.icon-help-buoy:before {
+  content: ""; }
+
+.icon-help-circled:before {
+  content: ""; }
+
+.icon-home:before {
+  content: ""; }
+
+.icon-icecream:before {
+  content: ""; }
+
+.icon-image:before {
+  content: ""; }
+
+.icon-images:before {
+  content: ""; }
+
+.icon-information:before {
+  content: ""; }
+
+.icon-information-circled:before {
+  content: ""; }
+
+.icon-ionic:before {
+  content: ""; }
+
+.icon-ios-alarm:before {
+  content: ""; }
+
+.icon-ios-alarm-outline:before {
+  content: ""; }
+
+.icon-ios-albums:before {
+  content: ""; }
+
+.icon-ios-albums-outline:before {
+  content: ""; }
+
+.icon-ios-americanfootball:before {
+  content: ""; }
+
+.icon-ios-americanfootball-outline:before {
+  content: ""; }
+
+.icon-ios-analytics:before {
+  content: ""; }
+
+.icon-ios-analytics-outline:before {
+  content: ""; }
+
+.icon-ios-arrow-back:before {
+  content: ""; }
+
+.icon-ios-arrow-down:before {
+  content: ""; }
+
+.icon-ios-arrow-forward:before {
+  content: ""; }
+
+.icon-ios-arrow-left:before {
+  content: ""; }
+
+.icon-ios-arrow-right:before {
+  content: ""; }
+
+.icon-ios-arrow-thin-down:before {
+  content: ""; }
+
+.icon-ios-arrow-thin-left:before {
+  content: ""; }
+
+.icon-ios-arrow-thin-right:before {
+  content: ""; }
+
+.icon-ios-arrow-thin-up:before {
+  content: ""; }
+
+.icon-ios-arrow-up:before {
+  content: ""; }
+
+.icon-ios-at:before {
+  content: ""; }
+
+.icon-ios-at-outline:before {
+  content: ""; }
+
+.icon-ios-barcode:before {
+  content: ""; }
+
+.icon-ios-barcode-outline:before {
+  content: ""; }
+
+.icon-ios-baseball:before {
+  content: ""; }
+
+.icon-ios-baseball-outline:before {
+  content: ""; }
+
+.icon-ios-basketball:before {
+  content: ""; }
+
+.icon-ios-basketball-outline:before {
+  content: ""; }
+
+.icon-ios-bell:before {
+  content: ""; }
+
+.icon-ios-bell-outline:before {
+  content: ""; }
+
+.icon-ios-body:before {
+  content: ""; }
+
+.icon-ios-body-outline:before {
+  content: ""; }
+
+.icon-ios-bolt:before {
+  content: ""; }
+
+.icon-ios-bolt-outline:before {
+  content: ""; }
+
+.icon-ios-book:before {
+  content: ""; }
+
+.icon-ios-book-outline:before {
+  content: ""; }
+
+.icon-ios-bookmarks:before {
+  content: ""; }
+
+.icon-ios-bookmarks-outline:before {
+  content: ""; }
+
+.icon-ios-box:before {
+  content: ""; }
+
+.icon-ios-box-outline:before {
+  content: ""; }
+
+.icon-ios-briefcase:before {
+  content: ""; }
+
+.icon-ios-briefcase-outline:before {
+  content: ""; }
+
+.icon-ios-browsers:before {
+  content: ""; }
+
+.icon-ios-browsers-outline:before {
+  content: ""; }
+
+.icon-ios-calculator:before {
+  content: ""; }
+
+.icon-ios-calculator-outline:before {
+  content: ""; }
+
+.icon-ios-calendar:before {
+  content: ""; }
+
+.icon-ios-calendar-outline:before {
+  content: ""; }
+
+.icon-ios-camera:before {
+  content: ""; }
+
+.icon-ios-camera-outline:before {
+  content: ""; }
+
+.icon-ios-cart:before {
+  content: ""; }
+
+.icon-ios-cart-outline:before {
+  content: ""; }
+
+.icon-ios-chatboxes:before {
+  content: ""; }
+
+.icon-ios-chatboxes-outline:before {
+  content: ""; }
+
+.icon-ios-chatbubble:before {
+  content: ""; }
+
+.icon-ios-chatbubble-outline:before {
+  content: ""; }
+
+.icon-ios-checkmark:before {
+  content: ""; }
+
+.icon-ios-checkmark-empty:before {
+  content: ""; }
+
+.icon-ios-checkmark-outline:before {
+  content: ""; }
+
+.icon-ios-circle-filled:before {
+  content: ""; }
+
+.icon-ios-circle-outline:before {
+  content: ""; }
+
+.icon-ios-clock:before {
+  content: ""; }
+
+.icon-ios-clock-outline:before {
+  content: ""; }
+
+.icon-ios-close:before {
+  content: ""; }
+
+.icon-ios-close-empty:before {
+  content: ""; }
+
+.icon-ios-close-outline:before {
+  content: ""; }
+
+.icon-ios-cloud:before {
+  content: ""; }
+
+.icon-ios-cloud-download:before {
+  content: ""; }
+
+.icon-ios-cloud-download-outline:before {
+  content: ""; }
+
+.icon-ios-cloud-outline:before {
+  content: ""; }
+
+.icon-ios-cloud-upload:before {
+  content: ""; }
+
+.icon-ios-cloud-upload-outline:before {
+  content: ""; }
+
+.icon-ios-cloudy:before {
+  content: ""; }
+
+.icon-ios-cloudy-night:before {
+  content: ""; }
+
+.icon-ios-cloudy-night-outline:before {
+  content: ""; }
+
+.icon-ios-cloudy-outline:before {
+  content: ""; }
+
+.icon-ios-cog:before {
+  content: ""; }
+
+.icon-ios-cog-outline:before {
+  content: ""; }
+
+.icon-ios-color-filter:before {
+  content: ""; }
+
+.icon-ios-color-filter-outline:before {
+  content: ""; }
+
+.icon-ios-color-wand:before {
+  content: ""; }
+
+.icon-ios-color-wand-outline:before {
+  content: ""; }
+
+.icon-ios-compose:before {
+  content: ""; }
+
+.icon-ios-compose-outline:before {
+  content: ""; }
+
+.icon-ios-contact:before {
+  content: ""; }
+
+.icon-ios-contact-outline:before {
+  content: ""; }
+
+.icon-ios-copy:before {
+  content: ""; }
+
+.icon-ios-copy-outline:before {
+  content: ""; }
+
+.icon-ios-crop:before {
+  content: ""; }
+
+.icon-ios-crop-strong:before {
+  content: ""; }
+
+.icon-ios-download:before {
+  content: ""; }
+
+.icon-ios-download-outline:before {
+  content: ""; }
+
+.icon-ios-drag:before {
+  content: ""; }
+
+.icon-ios-email:before {
+  content: ""; }
+
+.icon-ios-email-outline:before {
+  content: ""; }
+
+.icon-ios-eye:before {
+  content: ""; }
+
+.icon-ios-eye-outline:before {
+  content: ""; }
+
+.icon-ios-fastforward:before {
+  content: ""; }
+
+.icon-ios-fastforward-outline:before {
+  content: ""; }
+
+.icon-ios-filing:before {
+  content: ""; }
+
+.icon-ios-filing-outline:before {
+  content: ""; }
+
+.icon-ios-film:before {
+  content: ""; }
+
+.icon-ios-film-outline:before {
+  content: ""; }
+
+.icon-ios-flag:before {
+  content: ""; }
+
+.icon-ios-flag-outline:before {
+  content: ""; }
+
+.icon-ios-flame:before {
+  content: ""; }
+
+.icon-ios-flame-outline:before {
+  content: ""; }
+
+.icon-ios-flask:before {
+  content: ""; }
+
+.icon-ios-flask-outline:before {
+  content: ""; }
+
+.icon-ios-flower:before {
+  content: ""; }
+
+.icon-ios-flower-outline:before {
+  content: ""; }
+
+.icon-ios-folder:before {
+  content: ""; }
+
+.icon-ios-folder-outline:before {
+  content: ""; }
+
+.icon-ios-football:before {
+  content: ""; }
+
+.icon-ios-football-outline:before {
+  content: ""; }
+
+.icon-ios-game-controller-a:before {
+  content: ""; }
+
+.icon-ios-game-controller-a-outline:before {
+  content: ""; }
+
+.icon-ios-game-controller-b:before {
+  content: ""; }
+
+.icon-ios-game-controller-b-outline:before {
+  content: ""; }
+
+.icon-ios-gear:before {
+  content: ""; }
+
+.icon-ios-gear-outline:before {
+  content: ""; }
+
+.icon-ios-glasses:before {
+  content: ""; }
+
+.icon-ios-glasses-outline:before {
+  content: ""; }
+
+.icon-ios-grid-view:before {
+  content: ""; }
+
+.icon-ios-grid-view-outline:before {
+  content: ""; }
+
+.icon-ios-heart:before {
+  content: ""; }
+
+.icon-ios-heart-outline:before {
+  content: ""; }
+
+.icon-ios-help:before {
+  content: ""; }
+
+.icon-ios-help-empty:before {
+  content: ""; }
+
+.icon-ios-help-outline:before {
+  content: ""; }
+
+.icon-ios-home:before {
+  content: ""; }
+
+.icon-ios-home-outline:before {
+  content: ""; }
+
+.icon-ios-infinite:before {
+  content: ""; }
+
+.icon-ios-infinite-outline:before {
+  content: ""; }
+
+.icon-ios-information:before {
+  content: ""; }
+
+.icon-ios-information-empty:before {
+  content: ""; }
+
+.icon-ios-information-outline:before {
+  content: ""; }
+
+.icon-ios-ionic-outline:before {
+  content: ""; }
+
+.icon-ios-keypad:before {
+  content: ""; }
+
+.icon-ios-keypad-outline:before {
+  content: ""; }
+
+.icon-ios-lightbulb:before {
+  content: ""; }
+
+.icon-ios-lightbulb-outline:before {
+  content: ""; }
+
+.icon-ios-list:before {
+  content: ""; }
+
+.icon-ios-list-outline:before {
+  content: ""; }
+
+.icon-ios-location:before {
+  content: ""; }
+
+.icon-ios-location-outline:before {
+  content: ""; }
+
+.icon-ios-locked:before {
+  content: ""; }
+
+.icon-ios-locked-outline:before {
+  content: ""; }
+
+.icon-ios-loop:before {
+  content: ""; }
+
+.icon-ios-loop-strong:before {
+  content: ""; }
+
+.icon-ios-medical:before {
+  content: ""; }
+
+.icon-ios-medical-outline:before {
+  content: ""; }
+
+.icon-ios-medkit:before {
+  content: ""; }
+
+.icon-ios-medkit-outline:before {
+  content: ""; }
+
+.icon-ios-mic:before {
+  content: ""; }
+
+.icon-ios-mic-off:before {
+  content: ""; }
+
+.icon-ios-mic-outline:before {
+  content: ""; }
+
+.icon-ios-minus:before {
+  content: ""; }
+
+.icon-ios-minus-empty:before {
+  content: ""; }
+
+.icon-ios-minus-outline:before {
+  content: ""; }
+
+.icon-ios-monitor:before {
+  content: ""; }
+
+.icon-ios-monitor-outline:before {
+  content: ""; }
+
+.icon-ios-moon:before {
+  content: ""; }
+
+.icon-ios-moon-outline:before {
+  content: ""; }
+
+.icon-ios-more:before {
+  content: ""; }
+
+.icon-ios-more-outline:before {
+  content: ""; }
+
+.icon-ios-musical-note:before {
+  content: ""; }
+
+.icon-ios-musical-notes:before {
+  content: ""; }
+
+.icon-ios-navigate:before {
+  content: ""; }
+
+.icon-ios-navigate-outline:before {
+  content: ""; }
+
+.icon-ios-nutrition:before {
+  content: ""; }
+
+.icon-ios-nutrition-outline:before {
+  content: ""; }
+
+.icon-ios-paper:before {
+  content: ""; }
+
+.icon-ios-paper-outline:before {
+  content: ""; }
+
+.icon-ios-paperplane:before {
+  content: ""; }
+
+.icon-ios-paperplane-outline:before {
+  content: ""; }
+
+.icon-ios-partlysunny:before {
+  content: ""; }
+
+.icon-ios-partlysunny-outline:before {
+  content: ""; }
+
+.icon-ios-pause:before {
+  content: ""; }
+
+.icon-ios-pause-outline:before {
+  content: ""; }
+
+.icon-ios-paw:before {
+  content: ""; }
+
+.icon-ios-paw-outline:before {
+  content: ""; }
+
+.icon-ios-people:before {
+  content: ""; }
+
+.icon-ios-people-outline:before {
+  content: ""; }
+
+.icon-ios-person:before {
+  content: ""; }
+
+.icon-ios-person-outline:before {
+  content: ""; }
+
+.icon-ios-personadd:before {
+  content: ""; }
+
+.icon-ios-personadd-outline:before {
+  content: ""; }
+
+.icon-ios-photos:before {
+  content: ""; }
+
+.icon-ios-photos-outline:before {
+  content: ""; }
+
+.icon-ios-pie:before {
+  content: ""; }
+
+.icon-ios-pie-outline:before {
+  content: ""; }
+
+.icon-ios-pint:before {
+  content: ""; }
+
+.icon-ios-pint-outline:before {
+  content: ""; }
+
+.icon-ios-play:before {
+  content: ""; }
+
+.icon-ios-play-outline:before {
+  content: ""; }
+
+.icon-ios-plus:before {
+  content: ""; }
+
+.icon-ios-plus-empty:before {
+  content: ""; }
+
+.icon-ios-plus-outline:before {
+  content: ""; }
+
+.icon-ios-pricetag:before {
+  content: ""; }
+
+.icon-ios-pricetag-outline:before {
+  content: ""; }
+
+.icon-ios-pricetags:before {
+  content: ""; }
+
+.icon-ios-pricetags-outline:before {
+  content: ""; }
+
+.icon-ios-printer:before {
+  content: ""; }
+
+.icon-ios-printer-outline:before {
+  content: ""; }
+
+.icon-ios-pulse:before {
+  content: ""; }
+
+.icon-ios-pulse-strong:before {
+  content: ""; }
+
+.icon-ios-rainy:before {
+  content: ""; }
+
+.icon-ios-rainy-outline:before {
+  content: ""; }
+
+.icon-ios-recording:before {
+  content: ""; }
+
+.icon-ios-recording-outline:before {
+  content: ""; }
+
+.icon-ios-redo:before {
+  content: ""; }
+
+.icon-ios-redo-outline:before {
+  content: ""; }
+
+.icon-ios-refresh:before {
+  content: ""; }
+
+.icon-ios-refresh-empty:before {
+  content: ""; }
+
+.icon-ios-refresh-outline:before {
+  content: ""; }
+
+.icon-ios-reload:before {
+  content: ""; }
+
+.icon-ios-reverse-camera:before {
+  content: ""; }
+
+.icon-ios-reverse-camera-outline:before {
+  content: ""; }
+
+.icon-ios-rewind:before {
+  content: ""; }
+
+.icon-ios-rewind-outline:before {
+  content: ""; }
+
+.icon-ios-rose:before {
+  content: ""; }
+
+.icon-ios-rose-outline:before {
+  content: ""; }
+
+.icon-ios-search:before {
+  content: ""; }
+
+.icon-ios-search-strong:before {
+  content: ""; }
+
+.icon-ios-settings:before {
+  content: ""; }
+
+.icon-ios-settings-strong:before {
+  content: ""; }
+
+.icon-ios-shuffle:before {
+  content: ""; }
+
+.icon-ios-shuffle-strong:before {
+  content: ""; }
+
+.icon-ios-skipbackward:before {
+  content: ""; }
+
+.icon-ios-skipbackward-outline:before {
+  content: ""; }
+
+.icon-ios-skipforward:before {
+  content: ""; }
+
+.icon-ios-skipforward-outline:before {
+  content: ""; }
+
+.icon-ios-snowy:before {
+  content: ""; }
+
+.icon-ios-speedometer:before {
+  content: ""; }
+
+.icon-ios-speedometer-outline:before {
+  content: ""; }
+
+.icon-ios-star:before {
+  content: ""; }
+
+.icon-ios-star-half:before {
+  content: ""; }
+
+.icon-ios-star-outline:before {
+  content: ""; }
+
+.icon-ios-stopwatch:before {
+  content: ""; }
+
+.icon-ios-stopwatch-outline:before {
+  content: ""; }
+
+.icon-ios-sunny:before {
+  content: ""; }
+
+.icon-ios-sunny-outline:before {
+  content: ""; }
+
+.icon-ios-telephone:before {
+  content: ""; }
+
+.icon-ios-telephone-outline:before {
+  content: ""; }
+
+.icon-ios-tennisball:before {
+  content: ""; }
+
+.icon-ios-tennisball-outline:before {
+  content: ""; }
+
+.icon-ios-thunderstorm:before {
+  content: ""; }
+
+.icon-ios-thunderstorm-outline:before {
+  content: ""; }
+
+.icon-ios-time:before {
+  content: ""; }
+
+.icon-ios-time-outline:before {
+  content: ""; }
+
+.icon-ios-timer:before {
+  content: ""; }
+
+.icon-ios-timer-outline:before {
+  content: ""; }
+
+.icon-ios-toggle:before {
+  content: ""; }
+
+.icon-ios-toggle-outline:before {
+  content: ""; }
+
+.icon-ios-trash:before {
+  content: ""; }
+
+.icon-ios-trash-outline:before {
+  content: ""; }
+
+.icon-ios-undo:before {
+  content: ""; }
+
+.icon-ios-undo-outline:before {
+  content: ""; }
+
+.icon-ios-unlocked:before {
+  content: ""; }
+
+.icon-ios-unlocked-outline:before {
+  content: ""; }
+
+.icon-ios-upload:before {
+  content: ""; }
+
+.icon-ios-upload-outline:before {
+  content: ""; }
+
+.icon-ios-videocam:before {
+  content: ""; }
+
+.icon-ios-videocam-outline:before {
+  content: ""; }
+
+.icon-ios-volume-high:before {
+  content: ""; }
+
+.icon-ios-volume-low:before {
+  content: ""; }
+
+.icon-ios-wineglass:before {
+  content: ""; }
+
+.icon-ios-wineglass-outline:before {
+  content: ""; }
+
+.icon-ios-world:before {
+  content: ""; }
+
+.icon-ios-world-outline:before {
+  content: ""; }
+
+.icon-ipad:before {
+  content: ""; }
+
+.icon-iphone:before {
+  content: ""; }
+
+.icon-ipod:before {
+  content: ""; }
+
+.icon-jet:before {
+  content: ""; }
+
+.icon-key:before {
+  content: ""; }
+
+.icon-knife:before {
+  content: ""; }
+
+.icon-laptop:before {
+  content: ""; }
+
+.icon-leaf:before {
+  content: ""; }
+
+.icon-levels:before {
+  content: ""; }
+
+.icon-lightbulb:before {
+  content: ""; }
+
+.icon-link:before {
+  content: ""; }
+
+.icon-load-a:before {
+  content: ""; }
+
+.icon-load-b:before {
+  content: ""; }
+
+.icon-load-c:before {
+  content: ""; }
+
+.icon-load-d:before {
+  content: ""; }
+
+.icon-location:before {
+  content: ""; }
+
+.icon-lock-combination:before {
+  content: ""; }
+
+.icon-locked:before {
+  content: ""; }
+
+.icon-log-in:before {
+  content: ""; }
+
+.icon-log-out:before {
+  content: ""; }
+
+.icon-loop:before {
+  content: ""; }
+
+.icon-magnet:before {
+  content: ""; }
+
+.icon-male:before {
+  content: ""; }
+
+.icon-man:before {
+  content: ""; }
+
+.icon-map:before {
+  content: ""; }
+
+.icon-medkit:before {
+  content: ""; }
+
+.icon-merge:before {
+  content: ""; }
+
+.icon-mic-a:before {
+  content: ""; }
+
+.icon-mic-b:before {
+  content: ""; }
+
+.icon-mic-c:before {
+  content: ""; }
+
+.icon-minus:before {
+  content: ""; }
+
+.icon-minus-circled:before {
+  content: ""; }
+
+.icon-minus-round:before {
+  content: ""; }
+
+.icon-model-s:before {
+  content: ""; }
+
+.icon-monitor:before {
+  content: ""; }
+
+.icon-more:before {
+  content: ""; }
+
+.icon-mouse:before {
+  content: ""; }
+
+.icon-music-note:before {
+  content: ""; }
+
+.icon-navicon:before {
+  content: ""; }
+
+.icon-navicon-round:before {
+  content: ""; }
+
+.icon-navigate:before {
+  content: ""; }
+
+.icon-network:before {
+  content: ""; }
+
+.icon-no-smoking:before {
+  content: ""; }
+
+.icon-nuclear:before {
+  content: ""; }
+
+.icon-outlet:before {
+  content: ""; }
+
+.icon-paintbrush:before {
+  content: ""; }
+
+.icon-paintbucket:before {
+  content: ""; }
+
+.icon-paper-airplane:before {
+  content: ""; }
+
+.icon-paperclip:before {
+  content: ""; }
+
+.icon-pause:before {
+  content: ""; }
+
+.icon-person:before {
+  content: ""; }
+
+.icon-person-add:before {
+  content: ""; }
+
+.icon-person-stalker:before {
+  content: ""; }
+
+.icon-pie-graph:before {
+  content: ""; }
+
+.icon-pin:before {
+  content: ""; }
+
+.icon-pinpoint:before {
+  content: ""; }
+
+.icon-pizza:before {
+  content: ""; }
+
+.icon-plane:before {
+  content: ""; }
+
+.icon-planet:before {
+  content: ""; }
+
+.icon-play:before {
+  content: ""; }
+
+.icon-playstation:before {
+  content: ""; }
+
+.icon-plus:before {
+  content: ""; }
+
+.icon-plus-circled:before {
+  content: ""; }
+
+.icon-plus-round:before {
+  content: ""; }
+
+.icon-podium:before {
+  content: ""; }
+
+.icon-pound:before {
+  content: ""; }
+
+.icon-power:before {
+  content: ""; }
+
+.icon-pricetag:before {
+  content: ""; }
+
+.icon-pricetags:before {
+  content: ""; }
+
+.icon-printer:before {
+  content: ""; }
+
+.icon-pull-request:before {
+  content: ""; }
+
+.icon-qr-scanner:before {
+  content: ""; }
+
+.icon-quote:before {
+  content: ""; }
+
+.icon-radio-waves:before {
+  content: ""; }
+
+.icon-record:before {
+  content: ""; }
+
+.icon-refresh:before {
+  content: ""; }
+
+.icon-reply:before {
+  content: ""; }
+
+.icon-reply-all:before {
+  content: ""; }
+
+.icon-ribbon-a:before {
+  content: ""; }
+
+.icon-ribbon-b:before {
+  content: ""; }
+
+.icon-sad:before {
+  content: ""; }
+
+.icon-sad-outline:before {
+  content: ""; }
+
+.icon-scissors:before {
+  content: ""; }
+
+.icon-search:before {
+  content: ""; }
+
+.icon-settings:before {
+  content: ""; }
+
+.icon-share:before {
+  content: ""; }
+
+.icon-shuffle:before {
+  content: ""; }
+
+.icon-skip-backward:before {
+  content: ""; }
+
+.icon-skip-forward:before {
+  content: ""; }
+
+.icon-social-android:before {
+  content: ""; }
+
+.icon-social-android-outline:before {
+  content: ""; }
+
+.icon-social-angular:before {
+  content: ""; }
+
+.icon-social-angular-outline:before {
+  content: ""; }
+
+.icon-social-apple:before {
+  content: ""; }
+
+.icon-social-apple-outline:before {
+  content: ""; }
+
+.icon-social-bitcoin:before {
+  content: ""; }
+
+.icon-social-bitcoin-outline:before {
+  content: ""; }
+
+.icon-social-buffer:before {
+  content: ""; }
+
+.icon-social-buffer-outline:before {
+  content: ""; }
+
+.icon-social-chrome:before {
+  content: ""; }
+
+.icon-social-chrome-outline:before {
+  content: ""; }
+
+.icon-social-codepen:before {
+  content: ""; }
+
+.icon-social-codepen-outline:before {
+  content: ""; }
+
+.icon-social-css3:before {
+  content: ""; }
+
+.icon-social-css3-outline:before {
+  content: ""; }
+
+.icon-social-designernews:before {
+  content: ""; }
+
+.icon-social-designernews-outline:before {
+  content: ""; }
+
+.icon-social-dribbble:before {
+  content: ""; }
+
+.icon-social-dribbble-outline:before {
+  content: ""; }
+
+.icon-social-dropbox:before {
+  content: ""; }
+
+.icon-social-dropbox-outline:before {
+  content: ""; }
+
+.icon-social-euro:before {
+  content: ""; }
+
+.icon-social-euro-outline:before {
+  content: ""; }
+
+.icon-social-facebook:before {
+  content: ""; }
+
+.icon-social-facebook-outline:before {
+  content: ""; }
+
+.icon-social-foursquare:before {
+  content: ""; }
+
+.icon-social-foursquare-outline:before {
+  content: ""; }
+
+.icon-social-freebsd-devil:before {
+  content: ""; }
+
+.icon-social-github:before {
+  content: ""; }
+
+.icon-social-github-outline:before {
+  content: ""; }
+
+.icon-social-google:before {
+  content: ""; }
+
+.icon-social-google-outline:before {
+  content: ""; }
+
+.icon-social-googleplus:before {
+  content: ""; }
+
+.icon-social-googleplus-outline:before {
+  content: ""; }
+
+.icon-social-hackernews:before {
+  content: ""; }
+
+.icon-social-hackernews-outline:before {
+  content: ""; }
+
+.icon-social-html5:before {
+  content: ""; }
+
+.icon-social-html5-outline:before {
+  content: ""; }
+
+.icon-social-instagram:before {
+  content: ""; }
+
+.icon-social-instagram-outline:before {
+  content: ""; }
+
+.icon-social-javascript:before {
+  content: ""; }
+
+.icon-social-javascript-outline:before {
+  content: ""; }
+
+.icon-social-linkedin:before {
+  content: ""; }
+
+.icon-social-linkedin-outline:before {
+  content: ""; }
+
+.icon-social-markdown:before {
+  content: ""; }
+
+.icon-social-nodejs:before {
+  content: ""; }
+
+.icon-social-octocat:before {
+  content: ""; }
+
+.icon-social-pinterest:before {
+  content: ""; }
+
+.icon-social-pinterest-outline:before {
+  content: ""; }
+
+.icon-social-python:before {
+  content: ""; }
+
+.icon-social-reddit:before {
+  content: ""; }
+
+.icon-social-reddit-outline:before {
+  content: ""; }
+
+.icon-social-rss:before {
+  content: ""; }
+
+.icon-social-rss-outline:before {
+  content: ""; }
+
+.icon-social-sass:before {
+  content: ""; }
+
+.icon-social-skype:before {
+  content: ""; }
+
+.icon-social-skype-outline:before {
+  content: ""; }
+
+.icon-social-snapchat:before {
+  content: ""; }
+
+.icon-social-snapchat-outline:before {
+  content: ""; }
+
+.icon-social-tumblr:before {
+  content: ""; }
+
+.icon-social-tumblr-outline:before {
+  content: ""; }
+
+.icon-social-tux:before {
+  content: ""; }
+
+.icon-social-twitch:before {
+  content: ""; }
+
+.icon-social-twitch-outline:before {
+  content: ""; }
+
+.icon-social-twitter:before {
+  content: ""; }
+
+.icon-social-twitter-outline:before {
+  content: ""; }
+
+.icon-social-usd:before {
+  content: ""; }
+
+.icon-social-usd-outline:before {
+  content: ""; }
+
+.icon-social-vimeo:before {
+  content: ""; }
+
+.icon-social-vimeo-outline:before {
+  content: ""; }
+
+.icon-social-whatsapp:before {
+  content: ""; }
+
+.icon-social-whatsapp-outline:before {
+  content: ""; }
+
+.icon-social-windows:before {
+  content: ""; }
+
+.icon-social-windows-outline:before {
+  content: ""; }
+
+.icon-social-wordpress:before {
+  content: ""; }
+
+.icon-social-wordpress-outline:before {
+  content: ""; }
+
+.icon-social-yahoo:before {
+  content: ""; }
+
+.icon-social-yahoo-outline:before {
+  content: ""; }
+
+.icon-social-yen:before {
+  content: ""; }
+
+.icon-social-yen-outline:before {
+  content: ""; }
+
+.icon-social-youtube:before {
+  content: ""; }
+
+.icon-social-youtube-outline:before {
+  content: ""; }
+
+.icon-soup-can:before {
+  content: ""; }
+
+.icon-soup-can-outline:before {
+  content: ""; }
+
+.icon-speakerphone:before {
+  content: ""; }
+
+.icon-speedometer:before {
+  content: ""; }
+
+.icon-spoon:before {
+  content: ""; }
+
+.icon-star:before {
+  content: ""; }
+
+.icon-stats-bars:before {
+  content: ""; }
+
+.icon-steam:before {
+  content: ""; }
+
+.icon-stop:before {
+  content: ""; }
+
+.icon-thermometer:before {
+  content: ""; }
+
+.icon-thumbsdown:before {
+  content: ""; }
+
+.icon-thumbsup:before {
+  content: ""; }
+
+.icon-toggle:before {
+  content: ""; }
+
+.icon-toggle-filled:before {
+  content: ""; }
+
+.icon-transgender:before {
+  content: ""; }
+
+.icon-trash-a:before {
+  content: ""; }
+
+.icon-trash-b:before {
+  content: ""; }
+
+.icon-trophy:before {
+  content: ""; }
+
+.icon-tshirt:before {
+  content: ""; }
+
+.icon-tshirt-outline:before {
+  content: ""; }
+
+.icon-umbrella:before {
+  content: ""; }
+
+.icon-university:before {
+  content: ""; }
+
+.icon-unlocked:before {
+  content: ""; }
+
+.icon-upload:before {
+  content: ""; }
+
+.icon-usb:before {
+  content: ""; }
+
+.icon-videocamera:before {
+  content: ""; }
+
+.icon-volume-high:before {
+  content: ""; }
+
+.icon-volume-low:before {
+  content: ""; }
+
+.icon-volume-medium:before {
+  content: ""; }
+
+.icon-volume-mute:before {
+  content: ""; }
+
+.icon-wand:before {
+  content: ""; }
+
+.icon-waterdrop:before {
+  content: ""; }
+
+.icon-wifi:before {
+  content: ""; }
+
+.icon-wineglass:before {
+  content: ""; }
+
+.icon-woman:before {
+  content: ""; }
+
+.icon-wrench:before {
+  content: ""; }
+
+.icon-xbox:before {
+  content: ""; }
+
+section {
+  display: block;
+  width: 50%;
+  padding: 50px; }
+  section.is-left {
+    float: left; }
+  section.is-right {
+    float: right; }
+  section.with-icon {
+    text-align: center; }
+  section h5 {
+    margin-bottom: 20px; }
+  section .icon {
+    display: inline-block;
+    font-size: 100px;
+    line-height: 1.5;
+    color: #0477bf;
+    text-align: center; }
+  section p a {
+    color: #404040; }
+
+@media all and (max-width: 767px) {
+  section {
+    width: 100%;
+    padding: 25px 15px; }
+    section.with-icon {
+      display: none; } }
